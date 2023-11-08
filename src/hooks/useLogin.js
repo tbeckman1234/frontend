@@ -12,9 +12,9 @@ export const useLogin = () => {
 
         const response = await fetch('https://mern-backend-b6lcuviyb-tbeckman1234.vercel.app/api/user/login', {
             method: 'POST',
-            headers: {'Content-Type' : 'application/json',
-                        'Access-Control-Allow-Origin' : 'https://mern-backend-b6lcuviyb-tbeckman1234.vercel.app/'
-        
+            headers: {
+                'Content-Type' : 'application/json',
+                'Access-Control-Allow-Origin' : 'https://mern-backend-b6lcuviyb-tbeckman1234.vercel.app/'        
             },
             body: JSON.stringify({email, password})
         })
