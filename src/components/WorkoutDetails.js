@@ -13,7 +13,7 @@ export default function WorkoutDetails({ workout }) {
       return
     }
 
-    const response = await fetch('/api/workouts/' + workout._id, {
+    const response = await fetch('https://mern-backend-tau.vercel.app/api/workouts/' + workout._id, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${user.token}`
