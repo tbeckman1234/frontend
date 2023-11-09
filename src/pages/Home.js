@@ -14,7 +14,7 @@ export default function Home() {
     const fetchWorkouts = async () => {
       const response = await fetch('https://mern-backend-tau.vercel.app/api/workouts', {
         headers: {
-          'Authorization': `Bearer ${user.token}`
+          'Authorization': `Bearer ${user.token}`,
         }
       })
       const json = await response.json()
@@ -42,3 +42,4 @@ export default function Home() {
     </div>
   )
 }
+//porcupine
